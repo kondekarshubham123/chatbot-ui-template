@@ -1,4 +1,5 @@
 fastapi
+Werkzeug==0.16.1
 uvicorn[standard]
 typer
 gunicorn

@@ -1,5 +1,6 @@
 from fastapi import FastAPI, status, Request
 from fastapi.middleware.cors import CORSMiddleware
+from werkzeug.middleware.proxy_fix import ProxyFix
 from app.main.config import Config
 from app.main.chatbot.talk.resource import talk_resource
 from app.main.chatbot.check.resource import check_resource
@@ -9,6 +10,8 @@ fast_app = FastAPI(
     description= "FastAPI Setup",
     version=Config.get_application_version()
 )
+
+fast_app.wsgi_app = ProxyFix(fast_app.wsgi_app)
 
 origins = ["*"]
 
