@@ -1,1 +1,1 @@
-web: uvicorn manage:run --host=0.0.0.0 --port=${PORT:-5000}
+web: uvicorn manage:fast_app --host=0.0.0.0 --port=${PORT:-5000}
