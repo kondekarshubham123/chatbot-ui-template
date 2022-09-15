@@ -2,5 +2,5 @@ fastapi
 Werkzeug==0.16.1
 uvicorn[standard]
 typer
-uvicorn==0.9.0
+uvicorn
 gunicorn
