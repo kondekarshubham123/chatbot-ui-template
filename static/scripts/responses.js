@@ -3,7 +3,7 @@ async function getBotResponse(input){
     // 'http://localhost:8080/api/chatbot/check'
     // console.log(input);
     const getResponse = async () => {
-        const response = await fetch('https://chatbot-backe.herokuapp.com/api/chatbot//talk',{
+        const response = await fetch('https://chatbot-backe.herokuapp.com/api/chatbot/talk',{
           method: 'POST',
           headers: {
               "content-type": "application/json",
