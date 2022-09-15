@@ -1,11 +1,13 @@
 import os
 import uvicorn
 import typer
+# from werkzeug.middleware.proxy_fix import ProxyFix
 from app.main.config import Config,basedir
 from app import fast_app
 
 manager = typer.Typer()
 
+# fast_app.wsgi_app = ProxyFix(fast_app.wsgi_app)
 
 @manager.command(name='run')
 def run():
