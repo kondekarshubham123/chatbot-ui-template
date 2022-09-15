@@ -1,8 +1,8 @@
 # chatbot-ui-template
 
-Front End Deployments:
+Front End Deployment:
 
-> https://kondekarshubham123.github.io/chatbot-ui-template/
+> https://kondekarshubham123.github.io/chatbot-ui-template/FRONTEND/
 
 Back End Deployement:
 
