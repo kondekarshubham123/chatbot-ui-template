@@ -1,8 +1,10 @@
 {
-    "rock": "paper",
-    "paper": "scissors",
-    "scissors": "rock",
-    "hello": "Hello there!",
-    "bye": "See you later!",
-    "goodbye": "Talk to you later!"
+    "rock": {"type": 1,"res":"paper"},
+    "paper": {"type": 1,"res":"scissors"},
+    "scissors": {"type": 1,"res":"rock"},
+    "hello": {"type": 1,"res":"Hello there!"},
+    "bye": {"type": 1,"res":"See you later!"},
+    "goodbye": {"type":1, "res": "Talk to you later!"},
+    "hi": {"type":2, "res":["Hi there!", "how are you", "Hope everything is good"]},
+    "double": {"type":2, "res":["This is testing", "double message"]}
 }

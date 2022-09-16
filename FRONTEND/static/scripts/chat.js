@@ -49,8 +49,16 @@ firstBotMessage();
 // Retrieves the response
 async function getHardResponse(userText) {
     let botResponse = await getBotResponse(userText);
-    let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
-    $("#chatbox").append(botHtml);
+    if (botResponse["Type"] == 1){
+        let botHtml = '<p class="botText"><span>' + botResponse["Message"] + '</span></p>';
+        $("#chatbox").append(botHtml);
+    }else if (botResponse["Type"] == 2){
+        for (let index = 0; index < botResponse["Message"].length; index++) {
+            const element = botResponse["Message"][index];
+            let botHtml = '<p class="botText"><span>' + element + '</span></p>';
+            $("#chatbox").append(botHtml);
+        }
+    }
 
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }

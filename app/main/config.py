@@ -45,7 +45,7 @@ class Config:
         if key in response_config:
             return response_config[key]
         else:
-            return "Try asking something else!"
+            return {"type": 1, "res":"Try asking something else!"}
     
     def __init__(self, app_id) -> None:
         

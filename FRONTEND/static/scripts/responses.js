@@ -15,8 +15,6 @@ async function getBotResponse(input){
         return myJson;
     }
 
-    
     const data = await getResponse();
-    console.log(typeof(data["Message"]));
-    return data["Message"];
+    return data;
 }

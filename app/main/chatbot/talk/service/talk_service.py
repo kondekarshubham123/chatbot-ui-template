@@ -5,4 +5,5 @@ class TalkService():
 
     @staticmethod
     def get_response(query: TalkDTO):
-        return {"Message":Config.get_responses(query.talk)}
+        data = Config.get_responses(query.talk)
+        return {"Type": data["type"],"Message": data["res"]}
